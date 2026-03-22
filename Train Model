@@ -1,0 +1,2 @@
+model = RandomForestClassifier(n_estimators=200, max_depth=10)
+model.fit(X_train, y_train)
