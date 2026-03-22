@@ -1,0 +1,9 @@
+# Drop unnecessary column
+df.drop("User_ID", axis=1, inplace=True)
+
+# Convert text to numbers
+le = LabelEncoder()
+
+df['Gender'] = le.fit_transform(df['Gender'])
+df['Platform'] = le.fit_transform(df['Platform'])
+df['Addiction_Level'] = le.fit_transform(df['Addiction_Level'])
