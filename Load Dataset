@@ -1,0 +1,2 @@
+df = pd.read_csv("improved_social_media_dataset.csv")
+df.head()
